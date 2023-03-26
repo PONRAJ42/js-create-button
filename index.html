@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array value create button</title>
+    <!--<script src="script/main.js"></script>-->
+</head>
+<body>
+<body onload="printBtn();">
+</body>
+<script> 
+ var a=['RAJESH','PALANI','PONRA','ASHOK','NAGARAJ'];   
+                
+                function printBtn() {
+                    for (var i = 0; i < a.length; i++) {
+                       var btn = document.createElement("button");
+                       var t = document.createTextNode(a[i]);
+                       btn.appendChild(t);
+                       document.body.appendChild(btn);
+                    }
+                }
+</script>
+
+
+
+</html>
